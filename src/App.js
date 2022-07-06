@@ -40,7 +40,7 @@ import './styles/App.css';
 
 const App = () => {
 
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(true);
 
   return (
     <div>
