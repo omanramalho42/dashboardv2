@@ -6,6 +6,8 @@ import {
   Route 
 } from 'react-router-dom';
 
+import { useStateContext } from './contexts/ContextProvider';
+
 import { FiSettings } from 'react-icons/fi';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
@@ -34,13 +36,13 @@ import {
   ColorMapping,
   ColorPicker,
   Editor
-} from './screens'
+} from './screens';
 
 import './styles/App.css';
 
 const App = () => {
 
-  const [activeMenu, setActiveMenu] = useState(true);
+  const { activeMenu } = useStateContext();
 
   return (
     <div>
