@@ -10,7 +10,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import avatar from '../data/avatar.jpg';
+// import avatar from '../data/avatar.jpg';
 
 import { 
   Cart, 
@@ -43,6 +43,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 
 const Navbar = () => {
   
+  const avatar = 'https://avatars.githubusercontent.com/u/64960771?v=4';
+
   const { 
     activeMenu, 
     setActiveMenu, 
@@ -77,7 +79,7 @@ const Navbar = () => {
     <div className='flex justify-between p-2 md:mx-6 relative'>
       <NavButton 
         title="Menu" 
-        customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} 
+        customFunc={() => setActiveMenu((prevActiveMenu) => (!prevActiveMenu))} 
         color='blue'
         icon={<AiOutlineMenu />}
       />

@@ -10,7 +10,7 @@ const initialState = {
   cart: false,
   userProfile: false,
   notification: false
-}
+};
 
 export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
@@ -20,7 +20,6 @@ export const ContextProvider = ({ children }) => {
   const handleClick = (clicked) => {
     setIsClicked({ ...initialState, [clicked]: true });
   }
-  
   
   return (
     <StateContext.Provider
