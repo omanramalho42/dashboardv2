@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import 
+  React, 
+  { useEffect, useState } 
+from 'react';
 
 import { 
   BrowserRouter, 
@@ -62,6 +65,7 @@ const App = () => {
               </button>
             </TooltipComponent>
           </div>
+          
           {activeMenu ? (
             <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
               <Sidebar />
