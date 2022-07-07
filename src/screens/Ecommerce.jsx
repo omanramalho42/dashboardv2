@@ -70,7 +70,7 @@ const Ecommerce = () => {
                   <span><GoPrimitiveDot /></span>
                   <span>Expense</span>
                 </p>
-                <p className='flex items-center gap-2 text-gray-600 hover:drop-shadow-xl'>
+                <p className='flex items-center gap-2 text-green-500 hover:drop-shadow-xl'>
                   <span><GoPrimitiveDot /></span>
                   <span>Budget</span>
                 </p>
